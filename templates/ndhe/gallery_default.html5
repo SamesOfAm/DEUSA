@@ -1,0 +1,21 @@
+<ul>
+<?php
+    foreach ( $this->body as $class => $row )
+        foreach ( $row as $col )
+            if ( $col->addImage )
+            {
+?>
+<li class="row<?php echo $this->perRow; ?> <?php echo $col->class; ?>" <?php if ( $col->margin ) { ?> style="<?= $col->margin ?>"<?php } ?>>
+<?php if ( $col->href ) { ?>
+<a href="<?php echo $col->href; ?>"<?php echo $col->attributes; ?> title="<?php echo $col->alt; ?>"><img src="<?php echo $col->src; ?>"<?php echo $col->imgSize; ?> alt="<?php echo $col->alt; ?>"></a>
+<?php } else { ?>
+<img src="<?= $col->src ?>" <?php echo $col->imgSize; ?> alt="<?= $col->alt ?>" />
+<?php } ?>
+<?php if ($col->caption): ?>
+    <div class="caption"><?php echo $col->caption; ?></div>
+<?php endif; ?>
+</li>
+<?php
+}
+?>
+</ul>

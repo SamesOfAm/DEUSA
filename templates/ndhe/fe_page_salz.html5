@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="<?php echo $this->language; ?>">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=<?php echo $this->charset; ?>">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title><?php echo $this->pageTitle; ?> - <?php echo $this->mainTitle; ?></title>
+<base href="<?php echo $this->base; ?>">
+<meta name="robots" content="<?php echo $this->robots; ?>">
+<meta name="description" content="<?php echo $this->description; ?>">
+<meta name="keywords" content="<?php echo $this->keywords; ?>">
+
+<link rel="shortcut icon" href="files/salzpaste/layout/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="files/salzpaste/layout/apple-touch-icon.png">
+
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<script src="files/ndhe_layout/scripts/selectivizr-min.js"></script>
+<![endif]-->
+
+<?php echo $this->mooScripts; ?>
+<?php echo $this->stylesheets; ?>
+<?php echo $this->head; ?>
+
+<style>
+@font-face{font-family:Oswald;font-style:normal;font-weight:400;src:url(../files/ndhe_layout/font/oswald-v23-latin-regular.eot);src:local(''),url(../files/ndhe_layout/font/oswald-v23-latin-regular.eot?#iefix) format('embedded-opentype'),url(../files/ndhe_layout/font/oswald-v23-latin-regular.woff2) format('woff2'),url(../files/ndhe_layout/font/oswald-v23-latin-regular.woff) format('woff'),url(../files/ndhe_layout/font/oswald-v23-latin-regular.ttf) format('truetype'),url(../files/ndhe_layout/font/oswald-v23-latin-regular.svg#Oswald) format('svg')}@font-face{font-family:Oswald;font-style:normal;font-weight:300;src:url(../files/ndhe_layout/font/oswald-v23-latin-300.eot);src:local(''),url(../files/ndhe_layout/font/oswald-v23-latin-300.eot?#iefix) format('embedded-opentype'),url(../files/ndhe_layout/font/oswald-v23-latin-300.woff2) format('woff2'),url(../files/ndhe_layout/font/oswald-v23-latin-300.woff) format('woff'),url(../files/ndhe_layout/font/oswald-v23-latin-300.ttf) format('truetype'),url(../files/ndhe_layout/font/oswald-v23-latin-300.svg#Oswald) format('svg')}@font-face{font-family:Oswald;font-style:normal;font-weight:700;src:url(../files/ndhe_layout/font/oswald-v23-latin-700.eot);src:local(''),url(../files/ndhe_layout/font/oswald-v23-latin-700.eot?#iefix) format('embedded-opentype'),url(../files/ndhe_layout/font/oswald-v23-latin-700.woff2) format('woff2'),url(../files/ndhe_layout/font/oswald-v23-latin-700.woff) format('woff'),url(../files/ndhe_layout/font/oswald-v23-latin-700.ttf) format('truetype'),url(../files/ndhe_layout/font/oswald-v23-latin-700.svg#Oswald) format('svg')}@font-face{font-family:'Open Sans';font-style:normal;font-weight:300;src:url(../files/ndhe_layout/font/open-sans-v16-latin-300.eot);src:local('Open Sans Light'),local('OpenSans-Light'),url(../files/ndhe_layout/font/open-sans-v16-latin-300.eot?#iefix) format('embedded-opentype'),url(../files/ndhe_layout/font/open-sans-v16-latin-300.woff2) format('woff2'),url(../files/ndhe_layout/font/open-sans-v16-latin-300.woff) format('woff'),url(../files/ndhe_layout/font/open-sans-v16-latin-300.ttf) format('truetype'),url(../files/ndhe_layout/font/open-sans-v16-latin-300.svg#OpenSans) format('svg')}@font-face{font-family:'Open Sans';font-style:normal;font-weight:400;src:url(../files/ndhe_layout/font/open-sans-v16-latin-regular.eot);src:local('Open Sans Regular'),local('OpenSans-Regular'),url(../files/ndhe_layout/font/open-sans-v16-latin-regular.eot?#iefix) format('embedded-opentype'),url(../files/ndhe_layout/font/open-sans-v16-latin-regular.woff2) format('woff2'),url(../files/ndhe_layout/font/open-sans-v16-latin-regular.woff) format('woff'),url(../files/ndhe_layout/font/open-sans-v16-latin-regular.ttf) format('truetype'),url(../files/ndhe_layout/font/open-sans-v16-latin-regular.svg#OpenSans) format('svg')}@font-face{font-family:'Open Sans';font-style:normal;font-weight:700;src:url(../files/ndhe_layout/font/open-sans-v16-latin-700.eot);src:local('Open Sans Bold'),local('OpenSans-Bold'),url(../files/ndhe_layout/font/open-sans-v16-latin-700.eot?#iefix) format('embedded-opentype'),url(../files/ndhe_layout/font/open-sans-v16-latin-700.woff2) format('woff2'),url(../files/ndhe_layout/font/open-sans-v16-latin-700.woff) format('woff'),url(../files/ndhe_layout/font/open-sans-v16-latin-700.ttf) format('truetype'),url(../files/ndhe_layout/font/open-sans-v16-latin-700.svg#OpenSans) format('svg')}
+</style>
+<link rel="stylesheet" type="text/css" href="files/ndhe_layout/css/salzstyles.css" media="screen">
+<link rel="stylesheet" type="text/css" href="files/ndhe_layout/css/salzcustomize.css" media="screen">
+<link rel="stylesheet" type="text/css" href="files/ndhe_layout/css/print.css" media="print">
+
+</head>
+<body class="{{ua::class}}<?php if ($this->class): ?> <?php echo $this->class; ?><?php endif; ?>"<?php if ($this->onload): ?> onload="<?php echo $this->onload; ?>"<?php endif; ?>>
+<!--[if lt IE 8]><p id="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p><![endif]-->
+<div id="background"></div>
+<div id="top-container">
+	<div class="inside"><?php echo $this->getCustomSection('top-custom'); ?></div>
+</div>
+<div id="wrapper">
+	<div id="menue-container">
+		<div class="inside"><?php echo $this->getCustomSection('menue'); ?></div>
+	</div>
+	<?php if ($this->header): ?>
+	<header id="header">
+		<div class="inside"><?php echo $this->header; ?></div>
+	</header>
+	<?php endif; ?>
+	<div id="container">
+		<div id="container-inside">
+			<?php if ($this->left): ?>
+			<div id="left">
+				<div class="inside"><?php echo $this->left; ?></div>
+			</div>
+			<?php endif; ?>
+			<div id="main">
+				<div class="inside"><?php echo $this->main; ?></div>
+			</div>	
+			<?php if ($this->right): ?>
+			<div id="right">
+				<div class="inside"><?php echo $this->right; ?></div>
+			</div>
+			<?php endif; ?>
+		</div>
+	</div>
+	<?php if ($this->footer): ?>
+	<footer id="footer" class="block">
+		<div class="inside"><?php echo $this->footer; ?></div>
+	</footer>
+	<?php endif; ?>
+</div>
+<?php echo $this->mootools; ?>
+
+
+<!-- javaScripts
+  	================================================== -->
+<script src="files/ndhe_layout/scripts/selectnav.min.js" type="text/javascript" charset="utf-8"></script>
+
+</body>
+</html>

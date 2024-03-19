@@ -1,0 +1,20 @@
+<li class="nachrichtenliste block one_half<?php echo $this->class; ?>">
+<h2><?php echo $this->text ? $this->linkHeadline : $this->newsHeadline; ?></h2>
+<?php if ($this->hasMetaFields): ?>
+<div class="info"><?php if ($this->date): ?><div class="date"><?php echo $this->date; ?></div><?php endif; ?><?php if ($this->author): ?><div class="author"><?php echo $this->author; ?></div><?php endif; ?><?php if ($this->commentCount): ?><div class="comments"><?php echo $this->commentCount; ?></div><?php endif; ?></div><?php endif; ?>
+<?php if ($this->addImage): ?>
+<div class="image_container<?php echo $this->floatClass; ?>"<?php if ($this->margin || $this->float): ?> style="<?php echo trim($this->margin . $this->float); ?>"<?php endif; ?>>
+<?php if ($this->href): ?>
+<a href="<?php echo $this->href; ?>"<?php echo $this->attributes; ?> title="<?php echo $this->alt; ?>">
+<?php endif; ?>
+<img src="<?php echo $this->src; ?>" <?php echo $col->imgSize; ?> alt="<?php echo $this->alt; ?>" />
+<?php if ($this->href): ?>
+</a>
+<?php endif; ?>
+</div>
+<?php endif; ?>
+<div class="teaser"><?php echo $this->teaser; ?></div>
+<?php if ($this->text): ?>
+<a href="<?php echo $this->link; ?>" class="button">Weiterlesen ...</a>
+<?php endif; ?>
+</li>

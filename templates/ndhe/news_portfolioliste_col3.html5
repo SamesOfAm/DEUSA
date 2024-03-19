@@ -1,0 +1,12 @@
+<li class="portfolioliste one_third block<?php echo $this->class; ?>" data-type="<?php echo $this->subHeadline; ?>" data-id="<?php echo $this->id; ?>">
+	<div class="image_container">
+		<a href="<?php echo $this->link; ?>">
+			<img src="<?php echo $this->src; ?>" <?php echo $col->imgSize; ?> alt="<?php echo $this->alt; ?>" />
+		</a>
+	</div>
+	<div class="caption">
+		<div class="title"><strong><?php echo $this->text ? $this->linkHeadline : $this->newsHeadline; ?></strong></div>
+		<div class="subline"><?php echo $this->subHeadline; ?></div>
+	</div>
+	
+</li>

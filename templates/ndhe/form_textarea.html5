@@ -1,0 +1,17 @@
+<?php if (!$this->tableless): ?>
+  <tr class="<?php echo $this->rowClass; ?>">
+    <td class="col_0 col_first"><?php echo $this->generateLabel(); ?></td>
+    <td class="col_1 col_last"><?php echo $this->generateWithError(); ?></td>
+  </tr>
+<?php else: ?>
+	<div class="input-wrapper block<?php if ($this->class): ?> <?php echo $this->class; ?><?php endif; ?>">
+	  	<div class="input-wrapper-inside <?php echo $this->class; ?>">
+			<?php echo $this->generateLabel(); ?>
+			<span><i class="<?php echo $this->class; ?>"></i></span>
+			<?php echo $this->generate(); ?>
+		</div>
+		<?php if($this->hasErrors()):?>
+			<p class="error"><?php echo $this->getErrorsAsString(); ?></p>
+		<?php endif; ?>
+	</div>
+<?php endif; ?>

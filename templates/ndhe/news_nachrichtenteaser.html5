@@ -1,0 +1,15 @@
+<div class="nachrichtenteaser block<?php echo $this->class; ?>">
+<?php if ($this->addImage): ?>
+<div class="image_container<?php echo $this->floatClass; ?>"<?php if ($this->margin || $this->float): ?> style="<?php echo trim($this->margin . $this->float); ?>"<?php endif; ?>>
+<?php if ($this->href): ?>
+<a href="<?php echo $this->href; ?>"<?php echo $this->attributes; ?> title="<?php echo $this->alt; ?>">
+<?php endif; ?>
+<img src="<?php echo $this->src; ?>" <?php echo $col->imgSize; ?> alt="<?php echo $this->alt; ?>" />
+<?php if ($this->href): ?>
+</a>
+<?php endif; ?>
+</div>
+<?php endif; ?>
+<h4><?php echo $this->text ? $this->linkHeadline : $this->newsHeadline; ?></h4>
+<div class="info"><?php if ($this->date): ?><div class="date"><?php echo $this->date; ?></div><?php endif; ?><?php if ($this->author): ?><div class="author"><?php echo $this->author; ?></div><?php endif; ?><?php if ($this->commentCount): ?><div class="comments"><?php echo $this->commentCount; ?></div><?php endif; ?></div>
+</div>

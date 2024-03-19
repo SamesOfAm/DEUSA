@@ -1,0 +1,24 @@
+<?php
+$GLOBALS['SEO_SCRIPTS_FILE'][] = $this->asset('js/jquery-ui.min.js', 'contao-components/jquery-ui');
+?>
+<!-- SEO-SCRIPT-START -->
+<script>
+  jQuery(function($) {
+    jQuery(document).accordion({
+      // Put custom options here
+      heightStyle: 'content',
+      header: '.toggler',
+      collapsible: true,
+      create: function(event, ui) {
+        ui.header.addClass('active');
+        jQuery('.toggler').attr('tabindex', 0);
+      },
+      activate: function(event, ui) {
+        ui.newHeader.addClass('active');
+        ui.oldHeader.removeClass('active');
+        jQuery('.toggler').attr('tabindex', 0);
+      }
+    });
+  });
+</script>
+<!-- SEO-SCRIPT-STOP -->
