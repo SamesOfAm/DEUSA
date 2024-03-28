@@ -584,8 +584,8 @@ table th {text-align: left; padding: 0.5em;}
 .pagination li:before,
 .pagination li a:before {content: '';}
 .pagination li a,
-.pagination li .active {background: #333; display: block; margin-right: 1px; color: #fff; text-decoration: none; padding: 3px 7px;}
-.pagination li .active {background: #666;}
+.pagination li .current {background: #333; display: block; margin-right: 1px; color: #fff; text-decoration: none; padding: 3px 7px;}
+.pagination li .current {background: #666;}
 
 
 	/*     --ce_downloads

@@ -8400,6 +8400,7 @@ input::placeholder, textarea::placeholder {
 .body_bottom .mod_search .close-window i {
 	font-weight: bold;
 	font-size: 40px;
+	line-height: normal;
 }
 
 .ti-close::before {
@@ -8452,6 +8453,14 @@ input::placeholder, textarea::placeholder {
 
 .body_bottom .mod_search input:not(.submit), .body_bottom .mod_search button:not(.submit) {
 	font-size: 33px;
+}
+
+.smartmenu-content {
+	background: rgba(0,0,0,.8);
+}
+
+.mod_pageimage .inside > .container {
+	height: 570px;
 }
 
 .mod_pageimage .inside > .container {
