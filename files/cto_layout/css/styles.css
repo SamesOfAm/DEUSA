@@ -8434,7 +8434,7 @@ input::placeholder, textarea::placeholder {
 	background: #0059a3;
 }
 
-#search_217 > form:nth-child(1) > div:nth-child(1) {
+.mod_search .inside > div > form:nth-child(1) > div:nth-child(1) {
 	color: white;
 	text-align: center;
 	width: 60%;
@@ -8452,5 +8452,9 @@ input::placeholder, textarea::placeholder {
 
 .body_bottom .mod_search input:not(.submit), .body_bottom .mod_search button:not(.submit) {
 	font-size: 33px;
+}
+
+.mod_pageimage .inside > .container {
+	height: 570px;
 }
 

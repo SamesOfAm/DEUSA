@@ -53,7 +53,7 @@
 			<?php endif; ?>
 			<div id="main">
 				<div class="inside"><?php echo $this->main; ?></div>
-			</div>	
+			</div>
 			<?php if ($this->right): ?>
 			<div id="right">
 				<div class="inside"><?php echo $this->right; ?></div>
@@ -68,6 +68,7 @@
 	<?php endif; ?>
 </div>
 <?php echo $this->mootools; ?>
+<?php echo $this->jsonLdScripts; ?>
 
 
 <!-- javaScripts

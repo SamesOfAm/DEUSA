@@ -1,0 +1,6 @@
+<div class="lang"></div>
+<div class="mod_langswitcher meta-nav">
+	<div class="mod_langswitcher_inside">
+	<?php echo $this->items; ?>
+	</div>
+</div>
