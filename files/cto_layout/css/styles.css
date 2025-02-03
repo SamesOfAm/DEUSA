@@ -3150,7 +3150,12 @@ p.dropcap:first-letter,
 	max-width: 100%;
 	height: auto;
 	max-height: 100%;
-	width: 100%!important;
+	width: 100%;
+}
+
+.ce_player.quadrat video {
+	width: 600px;
+	height: 600px;
 }
 
 /* =============================================================================
@@ -4392,6 +4397,10 @@ html {
 	z-index: -1000;
 	visibility: hidden;
 	opacity: 1;
+}
+
+#bottom .inside a:hover {
+	border-bottom: none !important;
 }
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {

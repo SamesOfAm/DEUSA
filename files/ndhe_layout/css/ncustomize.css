@@ -2,7 +2,7 @@
  * logo height
  * ========================================================================== */
 
-#logo img {height: 54px;}
+#logo img {height: 70px;}
 
 
 /* =============================================================================
@@ -30,30 +30,29 @@ body {font-family: 'Open Sans', sans-serif; font-size: 12px; line-height: 19px;}
  * footer - colors
  * ========================================================================== */
 
-#footer {background-color: #3D3D3D;}
-#footer, #footer a, #footer h4 {color: #6F6F6F;}
+#footer {background-color: #DDDDDD;}
 
 
 /* =============================================================================
  * header fonts + colors
  * ========================================================================== */
 
-h1, h2, h3, h4, h5, h6  {font-family:  'Oswald', sans-serif !important; font-weight: 300 !important;}
-h1,h2,h3,h4,h5,h6,.color {color: #e5cf39;}
+h1, h2, h3, h4, h5, h6  {font-family:  'Oswald', sans-serif; font-weight: 300;}
+h1,h2,h3,h4,h5,h6,.color {color: #028D3D;}
 
 
 /* =============================================================================
  * buttons + submit buttons + hyperlinks - color
  * ========================================================================== */
 
-.button, input[type="submit"], input.submit {background-image: url(../img/rauschen.png); background-repeat: repeat;}
+.button, input[type="submit"], input.submit {background-color: #028D3D; background-image: url(../img/rauschen.png); background-repeat: repeat;}
 
 
 /* =============================================================================
  * mainmenu - font+width
  * ========================================================================== */
 /* layer 1 */
-nav#mainmenu ul li {width: 20%;}
+nav#mainmenu ul li {width: 25%;}
 nav#mainmenu ul li a {padding: 25px; font-family: 'Oswald', Arial, sans-serif; font-weight: 300; font-size: 18px; line-height: 18px; text-transform: uppercase;}
 
 /* layer 2+3 */
@@ -64,14 +63,14 @@ nav#mainmenu ul ul li a {min-width: 195px; padding: 8px 15px; font-family: 'Open
  * mainmenu - activ + hover
  * ========================================================================== */
 
-#dropdown li a:hover, #dropdown li a.active, #dropdown li a.trail, #dropdown ul li a:hover, #dropdown ul li a.trail, #dropdown ul li a.active, #dropdown ul li.active a {background-color: #494949; background-image: url(../img/rauschen.png); background-repeat: repeat;}
+#dropdown li a:hover, #dropdown li a.active, #dropdown li a.trail, #dropdown ul li a:hover, #dropdown ul li a.trail, #dropdown ul li a.active, #dropdown ul li.active a {background-color: #028d3d; background-image: url(../img/rauschen.png); background-repeat: repeat;}
 
 
 /* =============================================================================
  * mainmenu - background-color | layer 1
  * ========================================================================== */
 
-nav#mainmenu ul {background-color: #3D3D3D; background-image: url(../img/rauschen.png); background-repeat: repeat;}
+nav#mainmenu ul {background-color: #DDDDDD; background-image: url(../img/rauschen.png); background-repeat: repeat;}
 
 
 /* =============================================================================
@@ -79,46 +78,92 @@ nav#mainmenu ul {background-color: #3D3D3D; background-image: url(../img/rausche
  * ========================================================================== */
 
 nav#mainmenu ul ul {background: #fff;}
-body.dark nav#mainmenu ul ul {background: #DFDFDF;}
+body.dark nav#mainmenu ul ul {background: #fff;}
 
 
 /* =============================================================================
  * submenu - hover
  * ========================================================================== */
 
-#submenu a:hover {color: #E5CF39;}
+#submenu a:hover {color: #657383;}
 
 
 /* =============================================================================
  * calltoaction box - color + background-color
  * ========================================================================== */
 
- .calltoaction {border-left: 4px solid #333;}
- .calltoaction a {background: #464A53; color: #fff; }
+.calltoaction {border-left: 4px solid #333;}
+.calltoaction a {background: #464A53; color: #fff; }
 
 
 /* =============================================================================
  * bxslider - caption pisition
  * ========================================================================== */
- .bx-wrapper .bx-caption {
-	top: 26%; right: 10%; width: 40%; line-height: 21px;
+.bx-wrapper .bx-caption {
+    top: 26%; right: 10%; width: 40%; line-height: 21px;
+}
+
+
+nav#mainmenu ul li {
+    width: 20%;
+}
+
+nav#mainmenu ul ul {
+    width: 20%;
+}
+
+nav#mainmenu ul li a {
+    padding: 25px 0 25px 20px;
 }
 
 #lang a:hover {
     text-decoration: none;
-    color: #e5cf39 !important;
+    color: #008f36;
 }
 
-#footer a:hover, #bottom .inside a:hover {
-    color: #e1cb38 !important;
+#socials a:hover {
+    text-decoration: none;
+    color: #008f36;
+}
+
+#footer a:hover {
+    color: #008e36;
+}
+
+.ce_text p a:hover {
+    color: #008e35;
+}
+
+.ce_gallery .row3 {
+    margin-left: 0 !important;
 }
 
 /* tablet */
 @media only screen and (max-width: 980px) {
-	.bx-wrapper .bx-caption {top: 15%;}
+    .bx-wrapper .bx-caption {top: 15%;}
+
+    nav#mainmenu ul li a {
+        font-size: 13px;
+    }
 
 }
 /* phone */
 @media only screen and (max-width: 767px) {
-	.bx-caption {display: none;}
+    .bx-caption {display: none;}
+
+    .ce_gallery .row2,
+    .ce_gallery .row3,
+    .ce_gallery .row4,
+    .ce_gallery .row5,
+    .ce_gallery .row6,
+    .ce_gallery .row7,
+    .ce_gallery .row8,
+    .ce_gallery .row9,
+    .ce_gallery .row10,
+    .ce_gallery .row11,
+    .ce_gallery .row12 {
+        margin-left: 0;
+        width:100%;
+    }
+
 }
